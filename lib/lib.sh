@@ -547,9 +547,3 @@ rocky | almalinux)
   ;;
 esac
 
-# exit if not supported
-if [ "$SUPPORTED" == false ]; then
-  output "$OS $OS_VER is not supported"
-  error "Unsupported OS"
-  exit 1
-fi
